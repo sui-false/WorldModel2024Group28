@@ -8,7 +8,8 @@
 ## 成果物
 - **webAgent試作.ipynb**  
   WebAgentの実行環境  
-- **miniwob.zip**  （https://github.com/Farama-Foundation/miniwob-plusplus/tree/master/miniwob）
+
+- **miniwob.zip** [**Miniwob github**](https://github.com/Farama-Foundation/miniwob-plusplus/tree/master/miniwob)
   
   MiniWoBの環境  （上記URLからダウンロードしたもの）
 - **frame_mark_elements2.js**  
