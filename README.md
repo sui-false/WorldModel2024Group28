@@ -1,45 +1,63 @@
+```markdown
 # WorldModel2024Group28
 松尾研世界モデル講義の最終課題用リポジトリ
 
-最終課題は、google colab のnotebookで実装しています。
+最終課題は、Google Colab の Notebook で実装しています。
 
-# 成果物
-・webAgent試作.ipynb　　・・・WebAgentの実行環境
-・miniwob.zip　　・・・miniwobの環境
-・frame_mark_elements2.js 　・・・HTML加工用のライブラリ
+---
 
-# セットアップ
+## 成果物
+- **webAgent試作.ipynb**  
+  WebAgentの実行環境  
+- **miniwob.zip**  
+  MiniWoBの環境  
+- **frame_mark_elements2.js**  
+  HTML加工用のライブラリ  
 
-①geminiのAPI-KEYの準備
-　gemini 1.5 -flash を使用するため、事前にgemini-1.5-flashのAPI_KEYを準備
+---
 
-②環境構築
-　下記ファイルをダウンロードし zipファイルは解凍し、colab環境へアップロード
-　・miniwob.zip
-　・frame_mark_elements2.js
+## セットアップ
 
-③webAgent試作.ipynbへの上記、API,環境PATHの設定
-　１.　webAgent試作.ipynbに　API　－KEYの登録　※colabの左端の鍵アイコンでGOOGLE_API_KEYを設定
- 　　genai.configure(api_key=userdata.get('GOOGLE_API_KEY'))
+### ① Gemini の API-KEY の準備
+- Gemini 1.5 - Flash を使用するため、事前に `gemini-1.5-flash` の API_KEY を準備してください。
 
-  ２．環境パスの設定
-  　以下の部分を、アップロード先のパスに合わせて定義を修正してください.
-   
-   #miniwobのhtmlを配置しているフォルダパス（例）
-　　miniwob_path = '/content/drive/MyDrive/miniwob/html/miniwob/'
+### ② 環境構築
+- 以下のファイルをダウンロードし、zipファイルを解凍後、Colab 環境へアップロードしてください。
+  - `miniwob.zip`
+  - `frame_mark_elements2.js`
+
+### ③ webAgent試作.ipynb への API と環境パスの設定
+1. **API-KEY の登録**  
+   - Colab の左端にある鍵アイコンから `GOOGLE_API_KEY` を設定してください。
+   - 以下のようにコードを修正します:
+     ```python
+     genai.configure(api_key=userdata.get('GOOGLE_API_KEY'))
+     ```
+
+2. **環境パスの設定**  
+   - 以下の部分を、アップロード先のパスに合わせて修正してください。
+     ```python
+     # miniwob の HTML を配置しているフォルダパス（例）
+     miniwob_path = '/content/drive/MyDrive/miniwob/html/miniwob/'
+     
+     # JavaScript ファイルの配置パス（例）
+     js_path = '/content/drive/MyDrive/miniwob/frame_mark_elements2.js'
+     ```
+
+### ④ タスクの設定
+- **webAgent試作.ipynb** の一番下のセルにて、実行したいタスクを切り替えてください。
+- 以下のように `task_name` に実行したいタスクを設定します。
   
-   #javascriptファイルの配置パス（例）
-　  js_path='/content/drive/MyDrive/miniwob/frame_mark_elements2.js'
+  ![タスク設定例](https://github.com/user-attachments/assets/cba12621-05c2-46e8-acec-2f00926bde67)
 
-④タスクの設定
-webAgent試作.ipynbの一番下のセルにて、実行したいタスクの切り替え
-task_nameに実行したいタスクを設定する。
+---
 
-![image](https://github.com/user-attachments/assets/cba12621-05c2-46e8-acec-2f00926bde67)
+## 実行
+- Colab を上から順番にセルを実行することで、処理を行えます。
+- 一度全てのセルを実行済であれば、**最終セルのタスクを書き換えることで別タスクを実行可能**です。
 
- # 実行
- colabを上から順次実行することで、処理が行える。
- １度でも全セルを実行済であれば、、最終セルのタスクを書き換えて別のタスクを実行することが可能。
+---
 
-# 実験結果
-![image](https://github.com/user-attachments/assets/0777011a-c69f-4ed0-a72e-2d92c99bf882)
+## 実験結果
+![実験結果](https://github.com/user-attachments/assets/0777011a-c69f-4ed0-a72e-2d92c99bf882)
+```
