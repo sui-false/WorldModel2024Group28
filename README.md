@@ -29,13 +29,14 @@
 ### ③ webAgent試作.ipynb への API と環境パスの設定
 1. **API-KEY の登録**  
    - Colab の左端にある鍵アイコンから `GOOGLE_API_KEY` を設定してください。
-   - 以下のコード箇所でAPIが使用されます。:
+   - 以下のコード箇所でAPI＿KEYが使用されます。:
      ```python
      genai.configure(api_key=userdata.get('GOOGLE_API_KEY'))
      ```
 
 2. **環境パスの設定**  
    - 以下の部分を、アップロード先のパスに合わせて修正してください。
+   - miniwob/html/miniwobとなるようにフォルダ構成には注意してください。
      ```python
      # miniwob の HTML を配置しているフォルダパス（例）
      miniwob_path = '/content/drive/MyDrive/miniwob/html/miniwob/'
