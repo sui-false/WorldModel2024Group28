@@ -1,4 +1,3 @@
-```markdown
 # WorldModel2024Group28
 松尾研世界モデル講義の最終課題用リポジトリ
 
@@ -60,4 +59,4 @@
 
 ## 実験結果
 ![実験結果](https://github.com/user-attachments/assets/0777011a-c69f-4ed0-a72e-2d92c99bf882)
-```
+
